@@ -84,7 +84,7 @@ public class AboutActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.project_address:
                 Intent addressIntent = new Intent(Intent.ACTION_VIEW);
-                addressIntent.setData(Uri.parse("https://git.coding.net/liangpengyv/SimpleWeather.git"));
+                addressIntent.setData(Uri.parse("https://github.com/liangpengyv/SimpleNote"));
                 startActivity(addressIntent);
                 break;
             case R.id.qq_qun:
