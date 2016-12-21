@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B2EE" >
+
+    <ImageView
+        android:id="@+id/welcome_icon_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/welcome_4" />
+
+    <TextView
+        android:id="@+id/welcome_text_41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="在这里，为您记录"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/welcome_text_42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/welcome_icon_4"
+        android:layout_below="@id/welcome_text_41"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Keep the minutes"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/welcome_text_43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="· · · -"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/welcome_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/welcome_text_43"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/welcome_start"
+        android:text="立即体验"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

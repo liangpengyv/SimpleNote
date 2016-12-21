@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00B2EE">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#00B2EE">
+
+                <ImageView
+                    android:id="@+id/ic_bottom"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_0"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ic_bottom"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_name"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="关于软件"
+                    android:textColor="#00B2EE"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"/>
+
+                <Button
+                    android:id="@+id/check_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@mipmap/check_welcome"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="      查看欢迎页"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"/>
+
+                <Button
+                    android:id="@+id/check_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@mipmap/check_version"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="      检查新版本"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"/>
+
+                <Button
+                    android:id="@+id/feed_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@mipmap/feed_back"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="      Bug ＆ 建议反馈"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"/>
+
+                <Button
+                    android:id="@+id/project_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@mipmap/project_address"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="      GitHub 地址"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="关于作者"
+                    android:textColor="#00B2EE"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"/>
+
+                <Button
+                    android:id="@+id/qq_qun"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@mipmap/qq_qun"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="      企鹅群"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="感谢以下资源的支持"
+                    android:textColor="#00B2EE"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#BEBEBE"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="▶Iconfont-阿里巴巴矢量图标库-http://www.iconfont.cn/"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="▶MQC-阿里移动质量中心-https://mqc.aliyun.com/"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="▶fir.im-应用内测托管平台-http://fir.im/"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="▶BugHD-实时监控APP的崩溃分析工具-http://bughd.com/"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="▶麦客-简单好用的表单和联系人管理工具-http://www.mikecrm.com/index.php"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

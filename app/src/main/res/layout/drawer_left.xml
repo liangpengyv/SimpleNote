@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grouping_list"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_note"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#00B2EE">
+
+        <ImageView
+            android:id="@+id/ic_0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/ic_0"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/nonce_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_0"
+            android:layout_marginLeft="18dp"
+            android:text="简约便签"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nonce_note_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nonce_note"
+            android:layout_below="@id/nonce_note"
+            android:textColor="#FFFFFF"
+            android:text="Version: 1.0"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simple_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/title_note">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="文件夹"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/grouping_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simple_1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/all_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-8dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="65dp"
+                android:text="全部便签"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@mipmap/all_note"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/discard_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-8dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="65dp"
+                android:text="回收站"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@mipmap/discard_note"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/wait_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-8dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="65dp"
+                android:text="待办清单"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@mipmap/wait_note"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/wish_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-8dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="65dp"
+                android:text="长期愿望"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@mipmap/wish_note"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/simple_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/menu_list_bottom">
+
+        <TextView
+            android:id="@+id/temp_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BEBEBE"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/temp_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="选项"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_list_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-8dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="65dp"
+                android:text="设置"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@mipmap/setting"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-8dp"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="-8dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="65dp"
+                android:text="关于"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@mipmap/about"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
