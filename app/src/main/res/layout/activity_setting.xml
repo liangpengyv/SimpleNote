@@ -32,8 +32,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/select_order"
@@ -62,7 +61,7 @@
                 android:drawableLeft="@mipmap/auto_update"
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"
-                android:text="      自动检查更新"
+                android:text="      自动检查软件更新"
                 android:textSize="15sp"/>
 
             <TextView
